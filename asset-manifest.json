@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/InnovativeColorsWebsite/static/css/main.def877c0.chunk.css",
-    "main.js": "/InnovativeColorsWebsite/static/js/main.e67d37fd.chunk.js",
-    "main.js.map": "/InnovativeColorsWebsite/static/js/main.e67d37fd.chunk.js.map",
-    "runtime-main.js": "/InnovativeColorsWebsite/static/js/runtime-main.1d47238a.js",
-    "runtime-main.js.map": "/InnovativeColorsWebsite/static/js/runtime-main.1d47238a.js.map",
+    "main.js": "/InnovativeColorsWebsite/static/js/main.ac2a41c5.chunk.js",
+    "main.js.map": "/InnovativeColorsWebsite/static/js/main.ac2a41c5.chunk.js.map",
+    "runtime-main.js": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js",
+    "runtime-main.js.map": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js.map",
     "static/css/2.917fa12d.chunk.css": "/InnovativeColorsWebsite/static/css/2.917fa12d.chunk.css",
-    "static/js/2.e55e5669.chunk.js": "/InnovativeColorsWebsite/static/js/2.e55e5669.chunk.js",
-    "static/js/2.e55e5669.chunk.js.map": "/InnovativeColorsWebsite/static/js/2.e55e5669.chunk.js.map",
+    "static/js/2.b19a9547.chunk.js": "/InnovativeColorsWebsite/static/js/2.b19a9547.chunk.js",
+    "static/js/2.b19a9547.chunk.js.map": "/InnovativeColorsWebsite/static/js/2.b19a9547.chunk.js.map",
     "index.html": "/InnovativeColorsWebsite/index.html",
     "static/css/2.917fa12d.chunk.css.map": "/InnovativeColorsWebsite/static/css/2.917fa12d.chunk.css.map",
     "static/css/main.def877c0.chunk.css.map": "/InnovativeColorsWebsite/static/css/main.def877c0.chunk.css.map",
-    "static/js/2.e55e5669.chunk.js.LICENSE.txt": "/InnovativeColorsWebsite/static/js/2.e55e5669.chunk.js.LICENSE.txt",
+    "static/js/2.b19a9547.chunk.js.LICENSE.txt": "/InnovativeColorsWebsite/static/js/2.b19a9547.chunk.js.LICENSE.txt",
     "static/media/AboutUsPage.c9232ae2.jpeg": "/InnovativeColorsWebsite/static/media/AboutUsPage.c9232ae2.jpeg",
     "static/media/AgencyLandingPage.717f8ed6.jpeg": "/InnovativeColorsWebsite/static/media/AgencyLandingPage.717f8ed6.jpeg",
     "static/media/BlogIndexPage.0f03fbdc.jpeg": "/InnovativeColorsWebsite/static/media/BlogIndexPage.0f03fbdc.jpeg",
@@ -104,10 +104,10 @@
     "static/media/youtube-icon.10cce4d9.svg": "/InnovativeColorsWebsite/static/media/youtube-icon.10cce4d9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1d47238a.js",
+    "static/js/runtime-main.03fc5641.js",
     "static/css/2.917fa12d.chunk.css",
-    "static/js/2.e55e5669.chunk.js",
+    "static/js/2.b19a9547.chunk.js",
     "static/css/main.def877c0.chunk.css",
-    "static/js/main.e67d37fd.chunk.js"
+    "static/js/main.ac2a41c5.chunk.js"
   ]
 }
