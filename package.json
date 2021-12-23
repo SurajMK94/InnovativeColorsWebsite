@@ -1,5 +1,6 @@
 {
-  "name": "treact",
+  "name": "innovativecolors",
+  "homepage": "https://SurajMK94.github.io/InnovativeColorsWebsite",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -59,7 +60,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  
-  "homepage": "https://SurajMK94.github.io/InnovativeColorsWebsite"
+  }
 }
