@@ -4,10 +4,10 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
-import Header from "../headers/light.js";
+import Header from "../../InnovativeColors/headers/Header.js";
 
-import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
-import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+import ReactModalAdapter from "../../InnovativeColors/helpers/ReactModalAdapter.js";
+import ResponsiveVideoEmbed from "../../InnovativeColors/helpers/ResponsiveVideoEmbed.js";
 
 import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";

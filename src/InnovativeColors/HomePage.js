@@ -1,30 +1,19 @@
 import React from "react";
 import tw from "twin.macro";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
-import SliderCard from "components/cards/ThreeColSlider.js";
-import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
-import DownloadApp from "components/cta/DownloadApp.js";
-import MainFeature from "components/features/TwoColWithButton.js";
-// import Footer from "components/footers/SimpleFiveColumn.js";
+import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
+import OurTeam from "InnovativeColors/helpers/OurTeam.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 import logo from "images/InnovativeColorsLogo.png";
 import { Container } from "components/misc/Layouts.js";
-import WebsiteTabs from "components/hero/WebSiteTabs.js";
 import { SectionHeading } from "components/misc/Headings";
-import TwoColumnWithImage from "components/testimonials/TwoColumnWithImage";
+import AboutUs from "InnovativeColors/helpers/AbousUs";
 import TabGrid from "components/cards/TabCardGrid.js";
-import Features from "components/features/DashedBorderSixFeatures";
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
-import Header from "../components/headers/light.js";
+import Header from "./headers/Header.js";
 
-const Subheading = tw.span`tracking-wider text-sm font-medium`;
 const Heading = tw(SectionHeading)``;
 const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
-const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
-const Description = tw.span`inline-block mt-8`;
-const imageCss = tw`rounded-4xl`;
 
 var bgColors = { "default": "#001d28",
                     "bodyColor": "#121212",
@@ -41,7 +30,7 @@ const opts = {
 export default () => (
   <Container>
 
-<StickyHeader
+  <StickyHeader
     // This is the sticky part of the header.
     header={
       <div className="Header_root">
@@ -50,19 +39,17 @@ export default () => (
       color:bgColors.headingColor
     }}>
         <img class="innovativeColorsLogo" src={logo} height={50} width={150} alt="Logo"/>
-        {/* <WebsiteTabs></WebsiteTabs> */}
-
         <Header />
         </div>
       </div>
-    }
-  >
-    <div>
-        <video autoPlay loop muted height={2000} width={2000}>
-            <source src={"http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"} type='video/mp4' />
-        </video>
-      <div/>
-    </div>
+    }>
+
+  <div>
+      <video autoPlay loop muted height={2000} width={2000}>
+          <source src={"http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"} type='video/mp4' />
+      </video>
+    <div/>
+  </div>
 
 
 {/* <div className='player-wrapper'>
@@ -94,9 +81,9 @@ export default () => (
     }}>
 
     <div>
-      <TwoColumnWithImage>
+      <AboutUs>
         
-      </TwoColumnWithImage>
+      </AboutUs>
     </div>
 
     <div style={{
@@ -113,17 +100,15 @@ export default () => (
       }
     />
 
-  <Testimonial
+  <OurTeam
       subheading=""
       heading={<>OUR TEAM</>}
     />
 
   </div>
-  <Footer />
+  
 </AnimationRevealPage>
   </StickyHeader>
-  
-    
-  
+  <Footer />
   </Container>
 );

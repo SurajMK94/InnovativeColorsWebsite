@@ -93,7 +93,6 @@ export default ({
               {statistics.map((statistic, index) => (
                 <Statistic key={index}>
                   <Value>{statistic.value}</Value>
-                  <Key>{statistic.key}</Key>
                 </Statistic>
               ))}
             </Statistics>

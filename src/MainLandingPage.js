@@ -3,12 +3,12 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Rnd } from "react-rnd";
 import { motion } from "framer-motion";
 import { components } from "ComponentRenderer.js";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
 import { Container, Content2Xl, ContentWithVerticalPadding } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
-import { LogoLink } from "components/headers/light.js";
+import { LogoLink } from "InnovativeColors/headers/Header.js";
 import { SectionHeading as HeadingBase } from "components/misc/Headings";
 import { SectionDescription as DescriptionBase } from "components/misc/Typography";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
@@ -196,7 +196,7 @@ export default ({
             <PreviewCards>
               {Object.entries(landingPages).map(([pageName, page], index) => (
                 <PreviewCardContainer key={index}>
-                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href={page.url} target="_blank">
+                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href="/components/innerPages/LoginPage" target="_blank">
                     <PreviewCardImageContainer>
                       <PreviewCardImage
                         transition={{ type: "tween" }}
@@ -219,7 +219,7 @@ export default ({
             <PreviewCards>
               {Object.entries(innerPages).map(([pageName, page], index) => (
                 <PreviewCardContainer key={index}>
-                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href={page.url} target="_blank">
+                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href="{page.url}" target="_blank">
                     <PreviewCardImageContainer>
                       <PreviewCardImage
                         transition={{ type: "tween" }}

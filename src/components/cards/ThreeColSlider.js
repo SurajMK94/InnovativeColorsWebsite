@@ -92,22 +92,22 @@ export default () => {
   const cards = [
     {
       imageSrc: "https://images.unsplash.com/photo-1515041219749-89347f83291a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80",
-      title: "CG",
+      title: "3D modeller",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua."
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1591927597960-95cf948f8028?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2282&q=80",
-      title: "VFX",
+      title: "Texturing Artist",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua."
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1386&q=80",
-      title: "Game",
+      title: "Unity 3D developer",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua."
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1605192704979-2bb15327c206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1007&q=80",
-      title: "AR/VR",
+      title: "Animator",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua."
     },
   ]
@@ -117,9 +117,9 @@ export default () => {
       <Content>
         <HeadingWithControl>
         <div style={{
-        color:'#74c524'
+        color:'white'
       }}>
-        <Heading>Work</Heading>
+        <Heading>Careers</Heading>
         </div>
           
           <Controls>
@@ -137,7 +137,7 @@ export default () => {
                 </TitleReviewContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton>Visit</PrimaryButton>
+              <PrimaryButton>Apply</PrimaryButton>
             </Card>
           ))}
         </CardSlider>

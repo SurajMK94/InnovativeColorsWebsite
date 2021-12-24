@@ -1,10 +1,10 @@
 import React from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import Header from "components/headers/light.js";
+import Header from "InnovativeColors/headers/Header.js";
 import Footer from "components/footers/FiveColumnWithInputForm.js";
 import { SectionHeading } from "components/misc/Headings";
 
