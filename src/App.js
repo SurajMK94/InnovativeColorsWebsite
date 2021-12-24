@@ -130,7 +130,7 @@ export default function App() {
           <EventLandingPage />
         </Route>
         {/* <Route path="/">
-          <AgencyLandingPage />
+          <MainLandingPage />
         </Route> */}
       </Switch>
     </Router>

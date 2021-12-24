@@ -9,7 +9,7 @@ import { ReactComponent as WhatsappIcon } from "../../images/youtube-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as LinkedInIcon } from "../../images/linkedin-icon.svg";
 
-const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
+const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8 py-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-12 lg:py-1`;
 
 const Row = tw.div`flex items-center justify-center flex-col px-8`

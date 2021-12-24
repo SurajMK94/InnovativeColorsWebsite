@@ -35,13 +35,6 @@ const App = () => {
         </Tabs>
         {/* <h3>TAB NO: {value} clicked!</h3> */}
     </div>
-
-      <div>
-        <video autoPlay loop muted height={2000} width={2000}>
-            <source src={"http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"} type='video/mp4' />
-        </video>
-      <div/>
-    </div>
     </div>
   );
 };
