@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/InnovativeColorsWebsite/static/css/main.def877c0.chunk.css",
-    "main.js": "/InnovativeColorsWebsite/static/js/main.826485d0.chunk.js",
-    "main.js.map": "/InnovativeColorsWebsite/static/js/main.826485d0.chunk.js.map",
+    "main.js": "/InnovativeColorsWebsite/static/js/main.467df292.chunk.js",
+    "main.js.map": "/InnovativeColorsWebsite/static/js/main.467df292.chunk.js.map",
     "runtime-main.js": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js",
     "runtime-main.js.map": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js.map",
     "static/css/2.382cd94e.chunk.css": "/InnovativeColorsWebsite/static/css/2.382cd94e.chunk.css",
@@ -26,6 +26,7 @@
     "static/media/email-illustration.84fb82b8.svg": "/InnovativeColorsWebsite/static/media/email-illustration.84fb82b8.svg",
     "static/media/facebook-icon.8f6512c4.svg": "/InnovativeColorsWebsite/static/media/facebook-icon.8f6512c4.svg",
     "static/media/handle-icon.75eb6395.svg": "/InnovativeColorsWebsite/static/media/handle-icon.75eb6395.svg",
+    "static/media/instagram-icon.037b581c.svg": "/InnovativeColorsWebsite/static/media/instagram-icon.037b581c.svg",
     "static/media/linkedin-icon.962df6ce.svg": "/InnovativeColorsWebsite/static/media/linkedin-icon.962df6ce.svg",
     "static/media/logo.2c489fc4.svg": "/InnovativeColorsWebsite/static/media/logo.2c489fc4.svg",
     "static/media/map-pin.svg": "/InnovativeColorsWebsite/static/media/map-pin.8c41fcd3.svg",
@@ -49,6 +50,6 @@
     "static/css/2.382cd94e.chunk.css",
     "static/js/2.bc82166f.chunk.js",
     "static/css/main.def877c0.chunk.css",
-    "static/js/main.826485d0.chunk.js"
+    "static/js/main.467df292.chunk.js"
   ]
 }
