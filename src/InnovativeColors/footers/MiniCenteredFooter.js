@@ -3,9 +3,9 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import {Container as ContainerBase } from "components/misc/Layouts.js"
 import logo from "../../images/logo.svg";
-import { ReactComponent as InstagramIcon } from "../../images/facebook-icon.svg";
+import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as WhatsappIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as LinkedInIcon } from "../../images/linkedin-icon.svg";
 
@@ -32,14 +32,14 @@ export default () => {
             Innovative Colors Studios
           </CopyrightText>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://instagram.com">
               <InstagramIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">
               <FacebookIcon />
             </SocialLink>
             <SocialLink href="https://youtube.com">
-              <WhatsappIcon />
+              <YoutubeIcon />
             </SocialLink>
             <SocialLink href="https://youtube.com">
               <TwitterIcon />

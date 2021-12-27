@@ -4,7 +4,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
 import Hero from "components/hero/BackgroundAsImage.js";
 import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
+import Footer from "InnovativeColors/footers/MiniCenteredFooter.js";
 import StickyHeader from 'react-sticky-header';
 import Header from "./headers/Header.js";
 import logo from "images/InnovativeColorsLogo.png";

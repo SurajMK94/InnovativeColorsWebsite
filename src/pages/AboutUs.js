@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "InnovativeColors/headers/Header.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Footer from "InnovativeColors/footers/FiveColumnWithInputForm.js";
 import MainFeature1 from "components/features/TwoColWithButton.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";

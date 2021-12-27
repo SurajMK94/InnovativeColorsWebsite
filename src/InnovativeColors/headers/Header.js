@@ -57,11 +57,17 @@ export const DesktopNavLinks = tw.nav`
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/components/landingPages/HomePage">HOME</NavLink>
-      <NavLink href="/components/landingPages/AboutUsPage">ABOUT</NavLink>
-      <NavLink href="/components/landingPages/JobsPage">JOBS</NavLink>
+      <NavLink href={process.env.PUBLIC_URL + "/"}>HOME</NavLink>
+      <NavLink href={process.env.PUBLIC_URL + "/components/landingPages/AboutUsPage"}>ABOUT</NavLink>
+      <NavLink href={process.env.PUBLIC_URL + "/components/landingPages/JobsPage"}>JOBS</NavLink>
+      <NavLink href={process.env.PUBLIC_URL + "/#"}>MY INNOVATIVE COLORS</NavLink>
+      <NavLink href= {process.env.PUBLIC_URL + "/components/landingPages/ContactPage"}>CONTACT</NavLink>
+
+      {/* <NavLink href="/InnovativeColorsWebsite/components/landingPages/HomePage">HOME</NavLink>
+      <NavLink href="/InnovativeColorsWebsite/components/landingPages/AboutUsPage">ABOUT</NavLink>
+      <NavLink href="/InnovativeColorsWebsite/components/landingPages/JobsPage">JOBS</NavLink>
       <NavLink href="/#">MY INNOVATIVE COLORS</NavLink>
-      <NavLink href="/components/landingPages/ContactPage">CONTACT</NavLink>
+      <NavLink href="/InnovativeColorsWebsite/components/landingPages/ContactPage">CONTACT</NavLink> */}
     </NavLinks>
   ];
 
@@ -83,7 +89,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
         {links}
       </DesktopNavLinks>
       <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
-        {logoLink}
         <MobileNavLinks initial={{ x: "150%", display: "none" }} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
           {links}
         </MobileNavLinks>

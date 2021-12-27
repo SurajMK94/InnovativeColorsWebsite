@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
 import OurTeam from "InnovativeColors/helpers/OurTeam.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
+import Footer from "InnovativeColors/footers/MiniCenteredFooter.js";
 import logo from "images/InnovativeColorsLogo.png";
 import { Container } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings";

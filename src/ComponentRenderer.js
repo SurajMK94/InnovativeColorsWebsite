@@ -14,23 +14,44 @@ export const components = {
     HomePage: {
       component: HomePage,
       imageSrc: EventLandingPageImageSrc,
-      url: "/components/landingPages/HomePage",
+      url: "/components/landingPages/HomePage"
     },
     ContactPage: {
       component: ContactPage,
       imageSrc: EventLandingPageImageSrc,
-      url: "/components/landingPages/ContactPage",
+      url: "/components/landingPages/ContactPage"
     },
     JobsPage: {
       component: JobsPage,
       imageSrc: EventLandingPageImageSrc,
-      url: "/components/landingPages/JobsPage",
+      url: "/components/landingPages/JobsPage"
     },
     AboutUsPage: {
       component: AboutUsPage,
       imageSrc: EventLandingPageImageSrc,
-      url: "/components/landingPages/AboutUsPage",
+      url: "/components/landingPages/AboutUsPage"
     }
+
+    // HomePage: {
+    //   component: HomePage,
+    //   imageSrc: EventLandingPageImageSrc,
+    //   url: "/InnovativeColorsWebsite/components/landingPages/HomePage"
+    // },
+    // ContactPage: {
+    //   component: ContactPage,
+    //   imageSrc: EventLandingPageImageSrc,
+    //   url: "/InnovativeColorsWebsite/components/landingPages/ContactPage"
+    // },
+    // JobsPage: {
+    //   component: JobsPage,
+    //   imageSrc: EventLandingPageImageSrc,
+    //   url: "/InnovativeColorsWebsite/components/landingPages/JobsPage"
+    // },
+    // AboutUsPage: {
+    //   component: AboutUsPage,
+    //   imageSrc: EventLandingPageImageSrc,
+    //   url: "/InnovativeColorsWebsite/components/landingPages/AboutUsPage"
+    // }
   }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
 import OurTeam from "InnovativeColors/helpers/OurTeam.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
+import Footer from "InnovativeColors/footers/MiniCenteredFooter.js";
 import logo from "images/InnovativeColorsLogo.png";
 import { Container } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings";
@@ -39,11 +39,15 @@ export default () => (
       color:bgColors.headingColor
     }}>
         <img class="innovativeColorsLogo" src={logo} height={50} width={150} alt="Logo"/>
-        <Header />
+        <Header/>
         </div>
       </div>
     }>
 
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
   <div>
       <video autoPlay loop muted height={2000} width={2000}>
           <source src={"http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"} type='video/mp4' />

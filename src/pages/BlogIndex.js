@@ -5,7 +5,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro";
 import Header from "InnovativeColors/headers/Header.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Footer from "InnovativeColors/footers/FiveColumnWithInputForm.js";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 
