@@ -1,0 +1,7 @@
+.App{
+    cursor: url(Cursor.png), auto;
+}
+
+a{
+    cursor: url(CursorExpand.png), pointer;
+}

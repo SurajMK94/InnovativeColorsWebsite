@@ -11,6 +11,7 @@ import TabGrid from "components/cards/TabCardGrid.js";
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
 import Header from "./headers/Header.js";
+import "./../App.css"
 
 const Heading = tw(SectionHeading)``;
 const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
@@ -28,7 +29,7 @@ const opts = {
 };
 
 export default () => (
-  <Container>
+  <Container className="App">
 
   <StickyHeader
     // This is the sticky part of the header.
@@ -42,8 +43,8 @@ export default () => (
         <Header/>
         </div>
       </div>
+      
     }>
-
     <br></br>
     <br></br>
     <br></br>

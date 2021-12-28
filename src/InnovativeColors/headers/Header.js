@@ -10,6 +10,7 @@ import useAnimatedNavToggler from "../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/InnovativeColorsLogo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
+import "./../../App.css"
 
 const Header = tw.header`
   flex justify-between items-start
@@ -71,7 +72,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <Link to="/JobsPage">JOBS</Link>
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      <Link to="/#">MY INNOVATIVE COLORS</Link>
+      <Link to="/AboutUsPage">MY INNOVATIVE COLORS</Link>
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <Link to="/ContactPage">CONTACT</Link>
     </NavLinks>
@@ -91,6 +92,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   return (
     <Header className={className || "header-light"}>
+      <a>
       <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
         {links}
       </DesktopNavLinks>
@@ -102,7 +104,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
           {showNavLinks ? <CloseIcon tw="w-10 h-10" /> : <MenuIcon tw="w-10 h-10" />}
         </NavToggle>
       </MobileNavLinksContainer>
-      
+      </a>
     </Header>
   );
 };
