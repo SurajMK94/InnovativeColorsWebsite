@@ -2,6 +2,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
+import {
+  Link
+} from 'react-router-dom';
 import { css } from "styled-components/macro"; //eslint-disable-line
 import useAnimatedNavToggler from "../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/InnovativeColorsLogo.png";
@@ -41,10 +44,10 @@ export const LogoLink = styled(NavLink)`
 
 export const MobileNavLinksContainer = tw.nav`flex flex-1 items-center justify-between`;
 export const NavToggle = tw.button`
-  lg:hidden z-20 focus:outline-none hocus:text-primary-500 transition duration-300
+  lg:hidden z-20 focus:outline-none hocus:text-gray-600 transition duration-300
 `;
 export const MobileNavLinks = motion(styled.div`
-  ${tw`lg:hidden z-10 fixed top-0 inset-x-0 mx-4 my-6 p-8 border text-center rounded-lg text-gray-900 bg-white`}
+  ${tw`lg:hidden z-10 fixed top-0 inset-x-0 my-20 p-8 border text-center rounded-lg font-bold text-gray-800 bg-white`}
   ${NavLinks} {
     ${tw`flex flex-col items-center`}
   }
@@ -57,17 +60,20 @@ export const DesktopNavLinks = tw.nav`
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href={process.env.PUBLIC_URL + "/"}>HOME</NavLink>
+      {/* <NavLink href={process.env.PUBLIC_URL + "/"}>HOME</NavLink>
       <NavLink href={process.env.PUBLIC_URL + "/components/landingPages/AboutUsPage"}>ABOUT</NavLink>
       <NavLink href={process.env.PUBLIC_URL + "/components/landingPages/JobsPage"}>JOBS</NavLink>
       <NavLink href={process.env.PUBLIC_URL + "/#"}>MY INNOVATIVE COLORS</NavLink>
-      <NavLink href= {process.env.PUBLIC_URL + "/components/landingPages/ContactPage"}>CONTACT</NavLink>
-
-      {/* <NavLink href="/InnovativeColorsWebsite/components/landingPages/HomePage">HOME</NavLink>
-      <NavLink href="/InnovativeColorsWebsite/components/landingPages/AboutUsPage">ABOUT</NavLink>
-      <NavLink href="/InnovativeColorsWebsite/components/landingPages/JobsPage">JOBS</NavLink>
-      <NavLink href="/#">MY INNOVATIVE COLORS</NavLink>
-      <NavLink href="/InnovativeColorsWebsite/components/landingPages/ContactPage">CONTACT</NavLink> */}
+      <NavLink href= {process.env.PUBLIC_URL + "/components/landingPages/ContactPage"}>CONTACT</NavLink> */}
+      <Link to="/" type="primary" >HOME</Link>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <Link to="/AboutUsPage">ABOUT</Link>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <Link to="/JobsPage">JOBS</Link>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <Link to="/#">MY INNOVATIVE COLORS</Link>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      <Link to="/ContactPage">CONTACT</Link>
     </NavLinks>
   ];
 
@@ -93,9 +99,10 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
           {links}
         </MobileNavLinks>
         <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-          {showNavLinks ? <CloseIcon tw="w-6 h-6" /> : <MenuIcon tw="w-6 h-6" />}
+          {showNavLinks ? <CloseIcon tw="w-10 h-10" /> : <MenuIcon tw="w-10 h-10" />}
         </NavToggle>
       </MobileNavLinksContainer>
+      
     </Header>
   );
 };
