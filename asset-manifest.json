@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/InnovativeColorsWebsite/static/css/main.ecdb303b.chunk.css",
-    "main.js": "/InnovativeColorsWebsite/static/js/main.66437276.chunk.js",
-    "main.js.map": "/InnovativeColorsWebsite/static/js/main.66437276.chunk.js.map",
+    "main.js": "/InnovativeColorsWebsite/static/js/main.3b06e408.chunk.js",
+    "main.js.map": "/InnovativeColorsWebsite/static/js/main.3b06e408.chunk.js.map",
     "runtime-main.js": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js",
     "runtime-main.js.map": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js.map",
     "static/css/2.382cd94e.chunk.css": "/InnovativeColorsWebsite/static/css/2.382cd94e.chunk.css",
@@ -49,6 +49,6 @@
     "static/css/2.382cd94e.chunk.css",
     "static/js/2.0e695e6f.chunk.js",
     "static/css/main.ecdb303b.chunk.css",
-    "static/js/main.66437276.chunk.js"
+    "static/js/main.3b06e408.chunk.js"
   ]
 }
