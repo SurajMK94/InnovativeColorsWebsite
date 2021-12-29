@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/InnovativeColorsWebsite/static/css/main.ecdb303b.chunk.css",
-    "main.js": "/InnovativeColorsWebsite/static/js/main.3b06e408.chunk.js",
-    "main.js.map": "/InnovativeColorsWebsite/static/js/main.3b06e408.chunk.js.map",
+    "main.js": "/InnovativeColorsWebsite/static/js/main.c83f0990.chunk.js",
+    "main.js.map": "/InnovativeColorsWebsite/static/js/main.c83f0990.chunk.js.map",
     "runtime-main.js": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js",
     "runtime-main.js.map": "/InnovativeColorsWebsite/static/js/runtime-main.03fc5641.js.map",
     "static/css/2.382cd94e.chunk.css": "/InnovativeColorsWebsite/static/css/2.382cd94e.chunk.css",
@@ -19,6 +19,7 @@
     "static/media/chevron-left.svg": "/InnovativeColorsWebsite/static/media/chevron-left.982a40d4.svg",
     "static/media/chevron-right.svg": "/InnovativeColorsWebsite/static/media/chevron-right.d45fd2f4.svg",
     "static/media/customize-icon.367468c9.svg": "/InnovativeColorsWebsite/static/media/customize-icon.367468c9.svg",
+    "static/media/design-illustration.415c277c.svg": "/InnovativeColorsWebsite/static/media/design-illustration.415c277c.svg",
     "static/media/dot-pattern.ee6f4f0e.svg": "/InnovativeColorsWebsite/static/media/dot-pattern.ee6f4f0e.svg",
     "static/media/email-illustration.84fb82b8.svg": "/InnovativeColorsWebsite/static/media/email-illustration.84fb82b8.svg",
     "static/media/facebook-icon.8f6512c4.svg": "/InnovativeColorsWebsite/static/media/facebook-icon.8f6512c4.svg",
@@ -49,6 +50,6 @@
     "static/css/2.382cd94e.chunk.css",
     "static/js/2.0e695e6f.chunk.js",
     "static/css/main.ecdb303b.chunk.css",
-    "static/js/main.3b06e408.chunk.js"
+    "static/js/main.c83f0990.chunk.js"
   ]
 }
