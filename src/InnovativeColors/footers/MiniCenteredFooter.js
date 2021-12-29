@@ -8,6 +8,7 @@ import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as LinkedInIcon } from "../../images/linkedin-icon.svg";
+import "./../../App.css"
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8 py-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-12 lg:py-1`;
@@ -16,7 +17,7 @@ const Row = tw.div`flex items-center justify-center flex-col px-8`
 
 const SocialLinksContainer = tw.div`mt-6`;
 const SocialLink = styled.a`
-  ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
+  ${tw`inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
   svg {
     ${tw`w-5 h-5`}
   }
@@ -32,19 +33,19 @@ export default () => {
             Innovative Colors Studios
           </CopyrightText>
           <SocialLinksContainer>
-            <SocialLink href="https://instagram.com">
+            <SocialLink as="a" target="_blank" href="https://instagram.com">
               <InstagramIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink as="a" target="_blank" href="https://twitter.com">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink as="a" target="_blank" href="https://youtube.com">
               <YoutubeIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink as="a" target="_blank" href="https://youtube.com">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink as="a" target="_blank" href="https://youtube.com">
               <LinkedInIcon />
             </SocialLink>
           </SocialLinksContainer>

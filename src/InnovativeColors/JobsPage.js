@@ -13,6 +13,7 @@ import styled from "styled-components";
 import EmailIllustrationSrc from "images/email-illustration.svg";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import * as emailjs from 'emailjs-com'
+import Features from "components/features/DashedBorderSixFeatures";
 
 const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
 const Heading = tw(SectionHeading)``;
@@ -103,7 +104,7 @@ render() {
     backgroundColor: bgColors.bodyColor,
     color:bgColors.headingColor
   }}>
-    <SliderCard></SliderCard>
+    <Features />
   </div>
 
 <Footer />

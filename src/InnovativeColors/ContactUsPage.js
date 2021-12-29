@@ -13,12 +13,12 @@ import StickyHeader from 'react-sticky-header';
 import Header from "./headers/Header.js";
 import TwoColContactUsWithIllustrationFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
 import * as emailjs from 'emailjs-com'
-
 import ContactUs from 'pages/ContactUs';
 import { PrimaryButton } from 'components/misc/Buttons.js';
 import styled from "styled-components";
 import EmailIllustrationSrc from "images/email-illustration.svg";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import "./../App.css";
 
 const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
 const Heading = tw(SectionHeading)``;
@@ -152,7 +152,7 @@ render() {
               onChange={this.handleChange.bind(this, 'message')}
               placeholder="Your Message Here" />
 
-              <SubmitButton type="submit" onClick={this.handleSubmit.bind(this)}>Send</SubmitButton>
+              <SubmitButton as="a" type="submit" onClick={this.handleSubmit.bind(this)}>Send</SubmitButton>
             </Form>
           </TextContent>
          

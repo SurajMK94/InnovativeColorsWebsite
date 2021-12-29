@@ -10,7 +10,9 @@ import useAnimatedNavToggler from "../helpers/useAnimatedNavToggler.js";
 import logo from "../../images/InnovativeColorsLogo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-import "./../../App.css"
+import { Button } from "@material-ui/core";
+import { PrimaryButton } from "components/misc/Buttons.js";
+import { HeaderButton } from "components/misc/Buttons.js";
 
 const Header = tw.header`
   flex justify-between items-start
@@ -55,7 +57,7 @@ export const MobileNavLinks = motion(styled.div`
 `);
 
 export const DesktopNavLinks = tw.nav`
-  hidden lg:flex flex-1 justify-between items-center
+hidden lg:flex flex-1 justify-between items-start py-px font-medium text-gray-100 hocus:text-gray-200
 `;
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
@@ -92,7 +94,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   return (
     <Header className={className || "header-light"}>
-      <a>
       <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
         {links}
       </DesktopNavLinks>
@@ -104,7 +105,6 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
           {showNavLinks ? <CloseIcon tw="w-10 h-10" /> : <MenuIcon tw="w-10 h-10" />}
         </NavToggle>
       </MobileNavLinksContainer>
-      </a>
     </Header>
   );
 };
