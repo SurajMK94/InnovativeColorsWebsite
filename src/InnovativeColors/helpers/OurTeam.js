@@ -6,14 +6,19 @@ import { ContentWithPaddingXl, Container } from "components/misc/Layouts.js";
 import { SectionHeading as Heading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "images/svg-decorator-blob-8.svg";
+import { FloatingLettersTextBuilder } from "react-animated-text-builders";
+import niranjanPhoto from 'images/Founders/Niranjan.jpg';
+import praveenPhoto from 'images/Founders/Praveen.jpg';
+import rajendraPhoto from 'images/Founders/Rajendra.jpg';
+import satishPhoto from 'images/Founders/Satish.jpg';
 
 const Subheading = tw(SubheadingBase)`text-center`;
 const Testimonials = tw.div`flex flex-col lg:flex-row items-center lg:items-stretch`;
 const TestimonialContainer = tw.div`mt-16 lg:w-1/3`;
 const Testimonial = tw.div`px-4 text-center max-w-xs mx-auto flex flex-col items-center`;
 const Image = tw.img`w-20 h-20 rounded-full`;
-const Quote = tw.blockquote`mt-5 text-gray-600 font-medium leading-loose`;
-const CustomerName = tw.p`mt-5 font-semibold uppercase text-sm tracking-wide`;
+const Quote = tw.blockquote`mt-1 text-gray-600 text-sm leading-loose`;
+const CustomerName = tw.p`mt-2 font-semibold text-base tracking-wide`;
 
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
   ${tw`pointer-events-none -z-20 absolute left-0 top-0 h-56 w-56 opacity-15 transform -translate-x-2/3 -translate-y-12 text-teal-400`}
@@ -29,31 +34,31 @@ export default ({
   testimonials = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      praveenPhoto,
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale"
+        "Production pipeline developer",
+      customerName: "Praveen SP (Founder/CEO)"
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+        '',
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy"
+        "Technical developer",
+      customerName: "Satish N (Co-Founder/CTO)"
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
+      rajendraPhoto,
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Steven Marcetti"
+        "Visual developer",
+      customerName: "Rajendra K (Co-Founder/CCO)"
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
+        niranjanPhoto,
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Steven Marcetti"
+        "Project manager",
+      customerName: "Niranjan Sirsikar (Co-Founder/COO)"
     }
   ]
 }) => {
@@ -71,9 +76,9 @@ export default ({
           {testimonials.map((testimonial, index) => (
             <TestimonialContainer key={index}>
               <Testimonial>
-                <Image src={testimonial.imageSrc} />
-                <Quote>"{testimonial.quote}"</Quote>
-                <CustomerName>- {testimonial.customerName}</CustomerName>
+                <Image src={testimonial.imageSrc}/>
+                <CustomerName>{testimonial.customerName}</CustomerName>
+                <Quote>{testimonial.quote}</Quote>
               </Testimonial>
             </TestimonialContainer>
           ))}

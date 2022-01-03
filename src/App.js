@@ -11,6 +11,13 @@ import HomePage from "./InnovativeColors/HomePage.js";
 import ContactPage from "./InnovativeColors/ContactUsPage.js";
 import JobsPage from "./InnovativeColors/JobsPage.js";
 import AboutUsPage from './InnovativeColors/AboutUsPage';
+import AnimationSquare from'./InnovativeColors/AnimationSquare';
+import CGWorks from "InnovativeColors/Works/CGWorks.js";
+import VFXWorks from "InnovativeColors/Works/VFXWorks.js";
+import GameWorks from "InnovativeColors/Works/GameWorks.js";
+import ARVRWorks from "InnovativeColors/Works/ARVRWorks.js";
+import ArchitectureWorks from "InnovativeColors/Works/ArchitectureWorks.js";
+import ELearningWorks from "InnovativeColors/Works/ELearningWorks.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -24,19 +31,33 @@ export default function App() {
         </Route> */}
 
         <Route path='/ContactPage' component={ContactPage}>
-        {console.log("BaseURL : " + process.env.PUBLIC_URL + " *ContactPage")}
         </Route>
 
         <Route path='/AboutUsPage' component={AboutUsPage}>
-        {console.log("BaseURL : " + process.env.PUBLIC_URL + " *AboutUsPage")}
         </Route>
 
         <Route path='/JobsPage' component={JobsPage}>
-        {console.log("BaseURL : " + process.env.PUBLIC_URL + " *JobsPage")}
         </Route>
 
         <Route exact path='/' component={HomePage}>
-        {console.log("BaseURL : " + process.env.PUBLIC_URL + " *HomePage")}
+        </Route>
+        
+        <Route path='/CGWorks' component={CGWorks}>
+        </Route>
+
+        <Route path='/VFXWorks' component={VFXWorks}>
+        </Route>
+
+        <Route path='/GameWorks' component={GameWorks}>
+        </Route>
+
+        <Route path='/ARVRWorks' component={ARVRWorks}>
+        </Route>
+
+        <Route path='/ArchitectureWorks' component={ArchitectureWorks}>
+        </Route>
+
+        <Route path='/ELearningWorks' component={ELearningWorks}>
         </Route>
 
         <Redirect to="/" />

@@ -6,6 +6,8 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import StatsIllustrationSrc from "images/stats-illustration.svg";
 import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
+import { FloatingLettersTextBuilder , BlinkingCursorTextBuilder} from 'react-animated-text-builders'
+import AboutUs from "./../../images/CG/CG1.jpg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -49,7 +51,7 @@ export default ({
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://surajmk94.github.io/InnovativeColorsWebsite/",
-  imageSrc = StatsIllustrationSrc,
+  imageSrc = AboutUs,
   imageCss = null,
   imageContainerCss = null,
   imageDecoratorBlob = false,
@@ -87,7 +89,11 @@ export default ({
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             {subheading && <Subheading>{subheading}</Subheading>}
-            <Heading>{heading}</Heading>
+            <BlinkingCursorTextBuilder
+              cursorStyle={{"backgroundColor": "#4454e2", "height": "70px"}}
+              textStyle={{"fontWeight": "bold", "font": "Times New Roman", "fontSize": "60px"}}
+              blinkTimeAfterFinish={-1}>
+              We  have  been  doing  this  since  1999.</BlinkingCursorTextBuilder> 
             <Description>{description}</Description>
             
             <PrimaryButton as="a" href={primaryButtonUrl}>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import tw from "twin.macro";
 import AnimationRevealPage from "InnovativeColors/helpers/AnimationRevealPage.js";
 import OurTeam from "InnovativeColors/helpers/OurTeam.js";
@@ -11,6 +11,7 @@ import TabGrid from "components/cards/TabCardGrid.js";
 import 'react-sticky-header/styles.css';
 import StickyHeader from 'react-sticky-header';
 import Header from "./headers/Header.js";
+import showreel from "Videos/Showreel.mp4";
 
 const Heading = tw(SectionHeading)``;
 const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
@@ -27,9 +28,12 @@ const opts = {
   },
 };
 
-export default () => (
+export default class HomePage extends Component {
+  
+  render() {
+  
+    return (
   <Container className="App">
-
   <StickyHeader
     // This is the sticky part of the header.
     header={
@@ -50,26 +54,16 @@ export default () => (
     <br></br>
   <div>
       <video autoPlay loop muted height={2000} width={2000}>
-          <source src={"http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4"} type='video/mp4' />
+          <source src={showreel} type='video/mp4' />
       </video>
     <div/>
   </div>
 
-
-{/* <div className='player-wrapper'>
-            <ReactPlayer
-            className='react-player fixed-bottom'
-            url= 'Videos/MinionsVideo.mp4'
-            width='100%'
-            height='100%'
-            controls = {true}
-
-            />
-        </div> */}
+  </StickyHeader>
 
   <AnimationRevealPage>
     
-
+  
   <div style={{
       backgroundColor: bgColors.bodyColor,
       color:bgColors.headingColor
@@ -112,7 +106,9 @@ export default () => (
   </div>
   
 </AnimationRevealPage>
-  </StickyHeader>
+  
   <Footer />
   </Container>
-);
+    );
+  }
+}

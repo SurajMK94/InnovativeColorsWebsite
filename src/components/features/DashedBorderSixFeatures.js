@@ -89,16 +89,18 @@ class DashedBorderSixFeatures extends Component {
   state = {
     job: '',
     name: '',
+    contactNo: '',
     email: '',
     showreel: ''
   }
   
   handleSubmit = (e)=> {
     e.preventDefault()
-    const { job, name, email, showreel } = this.state
+    const { job, name, contactNo, email, showreel } = this.state
     let templateParams = {
       jobname: job,
       firstname: name,
+      contactNo: contactNo,
       email: email,
       showreel: showreel,
      }
@@ -115,6 +117,7 @@ class DashedBorderSixFeatures extends Component {
     this.setState({
       job: '',
       name: '',
+      contactNo: '',
       email: '',
       showreel: ''
     })
@@ -196,6 +199,13 @@ handleApply = (e)=> {
               value={this.state.name}
               onChange={this.handleChange.bind(this, 'name')}
               placeholder="Full Name"/>
+
+              <Input 
+              type="number" 
+              name="contactNo" 
+              value={this.state.contactNo} 
+              onChange={this.handleChange.bind(this, 'contactNo')} 
+              placeholder="Your Contact number" />
 
               <Input 
               type="email" 

@@ -10,6 +10,7 @@ import Header from "./headers/Header.js";
 import logo from "images/InnovativeColorsLogo.png";
 import { Container } from "components/misc/Layouts.js";
 import { SectionHeading } from "components/misc/Headings";
+import { FloatingLettersTextBuilder , BlinkingCursorTextBuilder} from 'react-animated-text-builders'
 
 const Heading = tw(SectionHeading)``;
 var bgColors = { "default": "#001d28",
@@ -44,6 +45,9 @@ export default () => (
     <br></br>
     <br></br>
     <br></br>
+    <br></br>
+    <br></br>
+
     <Heading>ABOUT US</Heading>
     <MainFeature />
   </div>

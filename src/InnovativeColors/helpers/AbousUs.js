@@ -10,8 +10,8 @@ import { ReactComponent as ArrowLeftIcon } from "../../images/arrow-left-2-icon.
 import { ReactComponent as ArrowRightIcon } from "../../images/arrow-right-2-icon.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
-
 import "slick-carousel/slick/slick.css";
+import { FloatingLettersTextBuilder, BlinkingCursorTextBuilder } from 'react-animated-text-builders'
 
 const Container = tw.div`relative`;
 const Content = tw.div`py-2 lg:py-2`;
@@ -69,9 +69,13 @@ export default () => {
           <Testimonial>
             <TextContainer>
               <QuoteContainer>
-                <Quote>Innovative Colors studio is a core design driven company which is a one-stop solution based in Bangalore. Our company designs and develops a wide array of animations and interactive media. Our team of talented and well experienced animators  pushes the boundaries of visual and technical production at right direction.
+              
+                <BlinkingCursorTextBuilder timeout={50}>
+                Innovative Colors studio is a core design driven company which is a one-stop solution based in Bangalore. Our company designs and develops a wide array of animations and interactive media. Our team of talented and well experienced animators  pushes the boundaries of visual and technical production at right direction. Innovative Colors stands tall in its domain and crew with strong creative background with global experience. We manifest creative talent which can be recognized by creative industry ethics. We are developing visually enticing and industry superior quality products with globally acknowledged reputation in Creativity, Skills and Quality experience. We are rapidly gaining popularity with our successful works and services.
+                </BlinkingCursorTextBuilder>
+                {/* <Quote>Innovative Colors studio is a core design driven company which is a one-stop solution based in Bangalore. Our company designs and develops a wide array of animations and interactive media. Our team of talented and well experienced animators  pushes the boundaries of visual and technical production at right direction.
                 Innovative Colors stands tall in its domain and crew with strong creative background with global experience. We manifest creative talent which can be recognized by creative industry ethics. We are developing visually enticing and industry superior quality products with globally acknowledged reputation in Creativity, Skills and Quality experience. We are rapidly gaining popularity with our successful works and services.
-                </Quote>
+                </Quote> */}
               </QuoteContainer>
             </TextContainer>
           </Testimonial>

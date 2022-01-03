@@ -19,6 +19,7 @@ import styled from "styled-components";
 import EmailIllustrationSrc from "images/email-illustration.svg";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import "./../App.css";
+import { FloatingLettersTextBuilder , BlinkingCursorTextBuilder} from 'react-animated-text-builders'
 
 const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
 const Heading = tw(SectionHeading)``;
@@ -119,7 +120,11 @@ render() {
       color:'white'
     }}>
             {"Contact Us" && <Subheading>{"Contact Us"}</Subheading>}
-            <Heading><>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</></Heading>
+            <BlinkingCursorTextBuilder
+              cursorStyle={{"backgroundColor": "#4454e2", "height": "45px"}}
+              textStyle={{"fontWeight": "bold", "font": "Times New Roman", "fontSize": "40px"}}
+              blinkTimeAfterFinish={-1}>
+              Feel  free  to  get  in  touch  with  us.</BlinkingCursorTextBuilder>
             </div>
             <Form action='#' method='get'>
               <Input 
@@ -158,6 +163,10 @@ render() {
          
         </TextColumn>
       </TwoColumn>
+      <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
   <Footer />
   </Container>
   )

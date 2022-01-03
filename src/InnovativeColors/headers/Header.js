@@ -13,6 +13,7 @@ import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { Button } from "@material-ui/core";
 import { PrimaryButton } from "components/misc/Buttons.js";
 import { HeaderButton } from "components/misc/Buttons.js";
+import { FloatingLettersTextBuilder , BlinkingCursorTextBuilder} from 'react-animated-text-builders'
 
 const Header = tw.header`
   flex justify-between items-start
@@ -57,17 +58,12 @@ export const MobileNavLinks = motion(styled.div`
 `);
 
 export const DesktopNavLinks = tw.nav`
-hidden lg:flex flex-1 justify-between items-start py-px font-medium text-gray-100 hocus:text-gray-200
+hidden lg:flex flex-1 justify-between items-start py-px font-bold text-xl text-gray-100 hocus:text-gray-200
 `;
 
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   const defaultLinks = [
     <NavLinks key={1}>
-      {/* <NavLink href={process.env.PUBLIC_URL + "/"}>HOME</NavLink>
-      <NavLink href={process.env.PUBLIC_URL + "/components/landingPages/AboutUsPage"}>ABOUT</NavLink>
-      <NavLink href={process.env.PUBLIC_URL + "/components/landingPages/JobsPage"}>JOBS</NavLink>
-      <NavLink href={process.env.PUBLIC_URL + "/#"}>MY INNOVATIVE COLORS</NavLink>
-      <NavLink href= {process.env.PUBLIC_URL + "/components/landingPages/ContactPage"}>CONTACT</NavLink> */}
       <Link to="/" type="primary" >HOME</Link>
       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <Link to="/AboutUsPage">ABOUT</Link>
@@ -93,7 +89,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   links = defaultLinks;
 
   return (
-    <Header className={className || "header-light"}>
+    <Header  className={className || "header-light"}>
       <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
         {links}
       </DesktopNavLinks>
